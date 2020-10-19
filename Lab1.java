@@ -3,23 +3,28 @@ import static java.lang.Math.*;
 public class Lab1{
 
     public static int N3(int a){
-        return a * 2 + 3;
+	int b = a * 2 + 3;
+        return b;
     }
 
     public static double R57(){
-        return  random() * 12.0 - 5.0;
+	double a = random() * 12.0 - 5.0;
+        return  a;
     }
 
     public static double f1(double a){
-        return tan(tan(cbrt(a / 2.0)));
+	double a = tan(tan(cbrt(a / 2.0)));
+        return a;
     }
 
     public static double f2(double a){
-        return pow(8.0 * pow(3.0 / (3.0 + a), 9.0), pow(cbrt(a) / 12.0, 2.0) / (1.0 - pow(0.5 / a, a / 3.0)));
+	double b = pow(8.0 * pow(3.0 / (3.0 + a), 9.0), pow(cbrt(a) / 12.0, 2.0) / (1.0 - pow(0.5 / a, a / 3.0)));
+        return b;
     }
 
     public static double f3(double a){
-        return cbrt(pow(2.0 * a, 2.0) / (2.0 - pow(a * (PI - a), 2.0)));
+	double b = cbrt(pow(2.0 * a, 2.0) / (2.0 - pow(a * (PI - a), 2.0)));
+        return b;
     }
 
     public static void main(String[] args){
@@ -27,7 +32,7 @@ public class Lab1{
 
         short[] d = new short[m];
         for(int i = 0; i < m; i++){
-            d[i] = (short)N3(i);
+            d[i] = (short) N3(i);
         }
 
         double[] x = new double[n];
