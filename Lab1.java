@@ -2,12 +2,12 @@ import static java.lang.Math.*;
 
 public class Lab1{
 
-	public static int N3(int a){
+	public static int n3(int a){
 		int b = a * 2 + 3;
 		return b;
 	}
 
-	public static double R57(){
+	public static double r57(){
 		double a = random() * 12.0 - 5.0;
 		return  a;
 	}
@@ -32,12 +32,12 @@ public class Lab1{
 
 		short[] d = new short[m];
 		for(int i = 0; i < m; i++){
-			d[i] = (short) N3(i);
+			d[i] = (short) n3(i);
 		}
 
 		double[] x = new double[n];
 		for(int i = 0; i < n; i++){
-			x[i] = R57();
+			x[i] = r57();
 		}
 
 		double[][] q = new double[m][n];
