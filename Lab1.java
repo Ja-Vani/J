@@ -28,38 +28,38 @@ public class Lab1{
 	}
 
 	public static void main(String[] args){
-		final int n = 15, m = 9;
+		final int N = 15, M = 9;
 
-		short[] d = new short[m];
-		for(int i = 0; i < m; i++){
+		short[] d = new short[M];
+		for(int i = 0; i < M; i++){
 			d[i] = (short) n3(i);
 		}
 
-		double[] x = new double[n];
+		double[] x = new double[N];
 		for(int i = 0; i < n; i++){
 			x[i] = r57();
 		}
 
-		double[][] q = new double[m][n];
-		for(int i = 0; i < m; i++){
+		double[][] q = new double[M][N];
+		for(int i = 0; i < M; i++){
 
 			if(d[i] == 13){
-				for(int j = 0; j < n; j++){
+				for(int j = 0; j < N; j++){
 					q[i][j] = f1(x[j]);
 				}
 			} else if(d[i] == 3 || d[i] == 5 || d[i] == 15 || d[i] == 17){
-				for(int j=0; j < n; j++){
+				for(int j=0; j < N; j++){
 					q[i][j] = f2(x[j]);
 				}
 			} else {
-				for(int j = 0; j < n; j++){
+				for(int j = 0; j < N; j++){
 					q[i][j] = f3(x[j]);
 				}
 			}
 		}
 
-		for(int i = 0;i < m; i++){
-			for(int j = 0; j < n; j++){
+		for(int i = 0;i < M; i++){
+			for(int j = 0; j < N; j++){
 				System.out.printf("%.2f ", q[i][j]);
 			}
 			System.out.printf("\n");
